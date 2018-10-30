@@ -17,9 +17,9 @@ class Song{
         int size;
     public:
         void createSong();
-        string getTitle(){
-            return title;
-        }
+
+        string getTitle();
+
         string getArtist();
 
         int getSize();
@@ -27,6 +27,8 @@ class Song{
         bool operator >(Song const &rhs);
 
         bool operator <(Song const &rhs);
+
+        bool operator ==(Song const &rhs);
 
         Song(string title, string artist, int size);
         Song(string title, string artist);
