@@ -12,8 +12,8 @@ using namespace std;
 
 class Song{
     private:
-        string title;
         string artist;
+        string title;
         int size;
     public:
         void createSong();
@@ -30,7 +30,7 @@ class Song{
 
         bool operator ==(Song const &rhs);
 
-        Song(string title, string artist, int size);
-        Song(string title, string artist);
+        Song(string artist, string title, int size);
+        Song(string artist, string title);
 };
 

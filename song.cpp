@@ -5,13 +5,13 @@
 #include "song.h"
 
 
-Song::Song(string t, string a){
+Song::Song(string a, string t){
    title = t;
    artist = a;
    size = 1;
 }
 
-Song::Song(string t, string a, int s){
+Song::Song(string a, string t, int s){
    title = t;
    artist = a;
    size = s;
@@ -35,7 +35,7 @@ string Song::getArtist(){
  * song's artist or title comes alphabetically after this song or
  * if the compared song's size is larger than this
  * song. Otherwise it returns false*/
-bool Song::operator <(Song const &rhs){
+bool Song::operator >(Song const &rhs){
     if((this->artist.compare(rhs.artist)) > 0){
         return true;
     }else if((this->artist.compare(rhs.artist)) < 0){
@@ -63,7 +63,7 @@ bool Song::operator <(Song const &rhs){
  * song's artist or title comes alphabetically before this song or
  * if the compared song's size is smaller than this
  * song. Otherwise it returns false*/
-bool Song::operator >(Song const &rhs){
+bool Song::operator <(Song const &rhs){
     if((this->artist.compare(rhs.artist)) > 0){
         return false;
     }else if((this->artist.compare(rhs.artist)) < 0){
