@@ -5,6 +5,8 @@
 #include "song.h"
 
 
+//Constructors
+
 Song::Song(string a, string t){
    title = t;
    artist = a;
@@ -16,11 +18,15 @@ Song::Song(string a, string t, int s){
    artist = a;
    size = s;
 }
+<<<<<<< HEAD
+// Getters
+=======
 
 string Song::getTitle(){
     return title;
 }
 
+>>>>>>> 742a366103686f262d37ef720bb492138b1d8016
 int Song::getSize(){
     return size;
 }
@@ -29,12 +35,28 @@ string Song::getArtist(){
     return artist;
 }
 
+<<<<<<< HEAD
+//Setters
+void Song::setTitle(string t)
+{
+    title=t;
+}
+void Song::setArtist(string a){
+    artist=a;
+}
+void Song::setSize(int newsize)
+{
+    size=newsize;
+}
+//Operator Overides
+=======
 /*Using this operator on two instances of the
  * Song class will first compare the artists, then
  * the title, then the size. It returns true if the compared
  * song's artist or title comes alphabetically after this song or
  * if the compared song's size is larger than this
  * song. Otherwise it returns false*/
+>>>>>>> 742a366103686f262d37ef720bb492138b1d8016
 bool Song::operator >(Song const &rhs){
     if((this->artist.compare(rhs.artist)) > 0){
         return true;
@@ -63,6 +85,7 @@ bool Song::operator >(Song const &rhs){
  * song's artist or title comes alphabetically before this song or
  * if the compared song's size is smaller than this
  * song. Otherwise it returns false*/
+
 bool Song::operator <(Song const &rhs){
     if((this->artist.compare(rhs.artist)) > 0){
         return false;

@@ -7,6 +7,12 @@ set(CMAKE_DEPENDS_GENERATOR "MinGW Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
+<<<<<<< HEAD
+  "C:/Program Files/JetBrains/CLion 2018.2.2/bin/cmake/win/share/cmake-3.12/Modules/CMakeCInformation.cmake"
+  "C:/Program Files/JetBrains/CLion 2018.2.2/bin/cmake/win/share/cmake-3.12/Modules/CMakeCXXInformation.cmake"
+  "C:/Program Files/JetBrains/CLion 2018.2.2/bin/cmake/win/share/cmake-3.12/Modules/CMakeCommonLanguageInclude.cmake"
+  "C:/Program Files/JetBrains/CLion 2018.2.2/bin/cmake/win/share/cmake-3.12/Modules/CMakeExtraGeneratorDetermineCompilerMacrosAndIncludeDirs.cmake"
+=======
   "C:/Program Files/JetBrains/CLion 2018.2.2/bin/cmake/win/share/cmake-3.12/Modules/CMakeCCompiler.cmake.in"
   "C:/Program Files/JetBrains/CLion 2018.2.2/bin/cmake/win/share/cmake-3.12/Modules/CMakeCCompilerABI.c"
   "C:/Program Files/JetBrains/CLion 2018.2.2/bin/cmake/win/share/cmake-3.12/Modules/CMakeCInformation.cmake"
@@ -25,10 +31,22 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Program Files/JetBrains/CLion 2018.2.2/bin/cmake/win/share/cmake-3.12/Modules/CMakeDetermineSystem.cmake"
   "C:/Program Files/JetBrains/CLion 2018.2.2/bin/cmake/win/share/cmake-3.12/Modules/CMakeExtraGeneratorDetermineCompilerMacrosAndIncludeDirs.cmake"
   "C:/Program Files/JetBrains/CLion 2018.2.2/bin/cmake/win/share/cmake-3.12/Modules/CMakeFindBinUtils.cmake"
+>>>>>>> 742a366103686f262d37ef720bb492138b1d8016
   "C:/Program Files/JetBrains/CLion 2018.2.2/bin/cmake/win/share/cmake-3.12/Modules/CMakeFindCodeBlocks.cmake"
   "C:/Program Files/JetBrains/CLion 2018.2.2/bin/cmake/win/share/cmake-3.12/Modules/CMakeGenericSystem.cmake"
   "C:/Program Files/JetBrains/CLion 2018.2.2/bin/cmake/win/share/cmake-3.12/Modules/CMakeInitializeConfigs.cmake"
   "C:/Program Files/JetBrains/CLion 2018.2.2/bin/cmake/win/share/cmake-3.12/Modules/CMakeLanguageInformation.cmake"
+<<<<<<< HEAD
+  "C:/Program Files/JetBrains/CLion 2018.2.2/bin/cmake/win/share/cmake-3.12/Modules/CMakeRCInformation.cmake"
+  "C:/Program Files/JetBrains/CLion 2018.2.2/bin/cmake/win/share/cmake-3.12/Modules/CMakeSystemSpecificInformation.cmake"
+  "C:/Program Files/JetBrains/CLion 2018.2.2/bin/cmake/win/share/cmake-3.12/Modules/CMakeSystemSpecificInitialize.cmake"
+  "C:/Program Files/JetBrains/CLion 2018.2.2/bin/cmake/win/share/cmake-3.12/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
+  "C:/Program Files/JetBrains/CLion 2018.2.2/bin/cmake/win/share/cmake-3.12/Modules/Compiler/GNU-C.cmake"
+  "C:/Program Files/JetBrains/CLion 2018.2.2/bin/cmake/win/share/cmake-3.12/Modules/Compiler/GNU-CXX.cmake"
+  "C:/Program Files/JetBrains/CLion 2018.2.2/bin/cmake/win/share/cmake-3.12/Modules/Compiler/GNU.cmake"
+  "C:/Program Files/JetBrains/CLion 2018.2.2/bin/cmake/win/share/cmake-3.12/Modules/Platform/Windows-GNU-C-ABI.cmake"
+  "C:/Program Files/JetBrains/CLion 2018.2.2/bin/cmake/win/share/cmake-3.12/Modules/Platform/Windows-GNU-C.cmake"
+=======
   "C:/Program Files/JetBrains/CLion 2018.2.2/bin/cmake/win/share/cmake-3.12/Modules/CMakeMinGWFindMake.cmake"
   "C:/Program Files/JetBrains/CLion 2018.2.2/bin/cmake/win/share/cmake-3.12/Modules/CMakeParseImplicitLinkInfo.cmake"
   "C:/Program Files/JetBrains/CLion 2018.2.2/bin/cmake/win/share/cmake-3.12/Modules/CMakeRCCompiler.cmake.in"
@@ -93,6 +111,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Program Files/JetBrains/CLion 2018.2.2/bin/cmake/win/share/cmake-3.12/Modules/Platform/Windows-GNU-C-ABI.cmake"
   "C:/Program Files/JetBrains/CLion 2018.2.2/bin/cmake/win/share/cmake-3.12/Modules/Platform/Windows-GNU-C.cmake"
   "C:/Program Files/JetBrains/CLion 2018.2.2/bin/cmake/win/share/cmake-3.12/Modules/Platform/Windows-GNU-CXX-ABI.cmake"
+>>>>>>> 742a366103686f262d37ef720bb492138b1d8016
   "C:/Program Files/JetBrains/CLion 2018.2.2/bin/cmake/win/share/cmake-3.12/Modules/Platform/Windows-GNU-CXX.cmake"
   "C:/Program Files/JetBrains/CLion 2018.2.2/bin/cmake/win/share/cmake-3.12/Modules/Platform/Windows-GNU.cmake"
   "C:/Program Files/JetBrains/CLion 2018.2.2/bin/cmake/win/share/cmake-3.12/Modules/Platform/Windows-windres.cmake"
@@ -100,12 +119,19 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Program Files/JetBrains/CLion 2018.2.2/bin/cmake/win/share/cmake-3.12/Modules/Platform/WindowsPaths.cmake"
   "C:/Program Files/JetBrains/CLion 2018.2.2/bin/cmake/win/share/cmake-3.12/Modules/ProcessorCount.cmake"
   "../CMakeLists.txt"
+<<<<<<< HEAD
+  "CMakeFiles/3.12.1/CMakeCCompiler.cmake"
+  "CMakeFiles/3.12.1/CMakeCXXCompiler.cmake"
+  "CMakeFiles/3.12.1/CMakeRCCompiler.cmake"
+  "CMakeFiles/3.12.1/CMakeSystem.cmake"
+=======
   "CMakeFiles/3.12.0/CMakeCCompiler.cmake"
   "CMakeFiles/3.12.0/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.12.0/CMakeRCCompiler.cmake"
   "CMakeFiles/3.12.0/CMakeSystem.cmake"
   "CMakeFiles/feature_tests.c"
   "CMakeFiles/feature_tests.cxx"
+>>>>>>> 742a366103686f262d37ef720bb492138b1d8016
   )
 
 # The corresponding makefile is:
@@ -116,16 +142,23 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
+<<<<<<< HEAD
+=======
   "CMakeFiles/3.12.0/CMakeSystem.cmake"
   "CMakeFiles/3.12.0/CMakeCCompiler.cmake"
   "CMakeFiles/3.12.0/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.12.0/CMakeRCCompiler.cmake"
   "CMakeFiles/3.12.0/CMakeCCompiler.cmake"
   "CMakeFiles/3.12.0/CMakeCXXCompiler.cmake"
+>>>>>>> 742a366103686f262d37ef720bb492138b1d8016
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+<<<<<<< HEAD
+  "CMakeFiles/UtPod.dir/DependInfo.cmake"
+=======
   "CMakeFiles/Lab_5_UtPod.dir/DependInfo.cmake"
+>>>>>>> 742a366103686f262d37ef720bb492138b1d8016
   )
