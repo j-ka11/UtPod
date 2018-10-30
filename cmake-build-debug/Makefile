@@ -47,10 +47,17 @@ RM = "C:\Program Files\JetBrains\CLion 2018.2.2\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
+<<<<<<< HEAD
 CMAKE_SOURCE_DIR = C:\Users\chris_d0m8an5\CLionProjects\UtPod
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = C:\Users\chris_d0m8an5\CLionProjects\UtPod\cmake-build-debug
+=======
+CMAKE_SOURCE_DIR = "D:\Documents\EE 312\Labs\Lab 5-UtPod\UtPod"
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = "D:\Documents\EE 312\Labs\Lab 5-UtPod\UtPod\cmake-build-debug"
+>>>>>>> 742a366103686f262d37ef720bb492138b1d8016
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -79,9 +86,15 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
+<<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\chris_d0m8an5\CLionProjects\UtPod\cmake-build-debug\CMakeFiles C:\Users\chris_d0m8an5\CLionProjects\UtPod\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\chris_d0m8an5\CLionProjects\UtPod\cmake-build-debug\CMakeFiles 0
+=======
+	$(CMAKE_COMMAND) -E cmake_progress_start "D:\Documents\EE 312\Labs\Lab 5-UtPod\UtPod\cmake-build-debug\CMakeFiles" "D:\Documents\EE 312\Labs\Lab 5-UtPod\UtPod\cmake-build-debug\CMakeFiles\progress.marks"
+	$(MAKE) -f CMakeFiles\Makefile2 all
+	$(CMAKE_COMMAND) -E cmake_progress_start "D:\Documents\EE 312\Labs\Lab 5-UtPod\UtPod\cmake-build-debug\CMakeFiles" 0
+>>>>>>> 742a366103686f262d37ef720bb492138b1d8016
 .PHONY : all
 
 # The main clean target
@@ -110,6 +123,7 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+<<<<<<< HEAD
 # Target rules for targets named UtPod
 
 # Build rule for target.
@@ -121,6 +135,19 @@ UtPod: cmake_check_build_system
 UtPod/fast:
 	$(MAKE) -f CMakeFiles\UtPod.dir\build.make CMakeFiles/UtPod.dir/build
 .PHONY : UtPod/fast
+=======
+# Target rules for targets named Lab_5_UtPod
+
+# Build rule for target.
+Lab_5_UtPod: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 Lab_5_UtPod
+.PHONY : Lab_5_UtPod
+
+# fast build rule for target.
+Lab_5_UtPod/fast:
+	$(MAKE) -f CMakeFiles\Lab_5_UtPod.dir\build.make CMakeFiles/Lab_5_UtPod.dir/build
+.PHONY : Lab_5_UtPod/fast
+>>>>>>> 742a366103686f262d37ef720bb492138b1d8016
 
 UtPod.obj: UtPod.cpp.obj
 
@@ -128,7 +155,11 @@ UtPod.obj: UtPod.cpp.obj
 
 # target to build an object file
 UtPod.cpp.obj:
+<<<<<<< HEAD
 	$(MAKE) -f CMakeFiles\UtPod.dir\build.make CMakeFiles/UtPod.dir/UtPod.cpp.obj
+=======
+	$(MAKE) -f CMakeFiles\Lab_5_UtPod.dir\build.make CMakeFiles/Lab_5_UtPod.dir/UtPod.cpp.obj
+>>>>>>> 742a366103686f262d37ef720bb492138b1d8016
 .PHONY : UtPod.cpp.obj
 
 UtPod.i: UtPod.cpp.i
@@ -137,7 +168,11 @@ UtPod.i: UtPod.cpp.i
 
 # target to preprocess a source file
 UtPod.cpp.i:
+<<<<<<< HEAD
 	$(MAKE) -f CMakeFiles\UtPod.dir\build.make CMakeFiles/UtPod.dir/UtPod.cpp.i
+=======
+	$(MAKE) -f CMakeFiles\Lab_5_UtPod.dir\build.make CMakeFiles/Lab_5_UtPod.dir/UtPod.cpp.i
+>>>>>>> 742a366103686f262d37ef720bb492138b1d8016
 .PHONY : UtPod.cpp.i
 
 UtPod.s: UtPod.cpp.s
@@ -146,7 +181,11 @@ UtPod.s: UtPod.cpp.s
 
 # target to generate assembly for a file
 UtPod.cpp.s:
+<<<<<<< HEAD
 	$(MAKE) -f CMakeFiles\UtPod.dir\build.make CMakeFiles/UtPod.dir/UtPod.cpp.s
+=======
+	$(MAKE) -f CMakeFiles\Lab_5_UtPod.dir\build.make CMakeFiles/Lab_5_UtPod.dir/UtPod.cpp.s
+>>>>>>> 742a366103686f262d37ef720bb492138b1d8016
 .PHONY : UtPod.cpp.s
 
 UtPod_Driver.obj: UtPod_Driver.cpp.obj
@@ -155,7 +194,11 @@ UtPod_Driver.obj: UtPod_Driver.cpp.obj
 
 # target to build an object file
 UtPod_Driver.cpp.obj:
+<<<<<<< HEAD
 	$(MAKE) -f CMakeFiles\UtPod.dir\build.make CMakeFiles/UtPod.dir/UtPod_Driver.cpp.obj
+=======
+	$(MAKE) -f CMakeFiles\Lab_5_UtPod.dir\build.make CMakeFiles/Lab_5_UtPod.dir/UtPod_Driver.cpp.obj
+>>>>>>> 742a366103686f262d37ef720bb492138b1d8016
 .PHONY : UtPod_Driver.cpp.obj
 
 UtPod_Driver.i: UtPod_Driver.cpp.i
@@ -164,7 +207,11 @@ UtPod_Driver.i: UtPod_Driver.cpp.i
 
 # target to preprocess a source file
 UtPod_Driver.cpp.i:
+<<<<<<< HEAD
 	$(MAKE) -f CMakeFiles\UtPod.dir\build.make CMakeFiles/UtPod.dir/UtPod_Driver.cpp.i
+=======
+	$(MAKE) -f CMakeFiles\Lab_5_UtPod.dir\build.make CMakeFiles/Lab_5_UtPod.dir/UtPod_Driver.cpp.i
+>>>>>>> 742a366103686f262d37ef720bb492138b1d8016
 .PHONY : UtPod_Driver.cpp.i
 
 UtPod_Driver.s: UtPod_Driver.cpp.s
@@ -173,7 +220,11 @@ UtPod_Driver.s: UtPod_Driver.cpp.s
 
 # target to generate assembly for a file
 UtPod_Driver.cpp.s:
+<<<<<<< HEAD
 	$(MAKE) -f CMakeFiles\UtPod.dir\build.make CMakeFiles/UtPod.dir/UtPod_Driver.cpp.s
+=======
+	$(MAKE) -f CMakeFiles\Lab_5_UtPod.dir\build.make CMakeFiles/Lab_5_UtPod.dir/UtPod_Driver.cpp.s
+>>>>>>> 742a366103686f262d37ef720bb492138b1d8016
 .PHONY : UtPod_Driver.cpp.s
 
 song.obj: song.cpp.obj
@@ -182,7 +233,11 @@ song.obj: song.cpp.obj
 
 # target to build an object file
 song.cpp.obj:
+<<<<<<< HEAD
 	$(MAKE) -f CMakeFiles\UtPod.dir\build.make CMakeFiles/UtPod.dir/song.cpp.obj
+=======
+	$(MAKE) -f CMakeFiles\Lab_5_UtPod.dir\build.make CMakeFiles/Lab_5_UtPod.dir/song.cpp.obj
+>>>>>>> 742a366103686f262d37ef720bb492138b1d8016
 .PHONY : song.cpp.obj
 
 song.i: song.cpp.i
@@ -191,7 +246,11 @@ song.i: song.cpp.i
 
 # target to preprocess a source file
 song.cpp.i:
+<<<<<<< HEAD
 	$(MAKE) -f CMakeFiles\UtPod.dir\build.make CMakeFiles/UtPod.dir/song.cpp.i
+=======
+	$(MAKE) -f CMakeFiles\Lab_5_UtPod.dir\build.make CMakeFiles/Lab_5_UtPod.dir/song.cpp.i
+>>>>>>> 742a366103686f262d37ef720bb492138b1d8016
 .PHONY : song.cpp.i
 
 song.s: song.cpp.s
@@ -200,7 +259,11 @@ song.s: song.cpp.s
 
 # target to generate assembly for a file
 song.cpp.s:
+<<<<<<< HEAD
 	$(MAKE) -f CMakeFiles\UtPod.dir\build.make CMakeFiles/UtPod.dir/song.cpp.s
+=======
+	$(MAKE) -f CMakeFiles\Lab_5_UtPod.dir\build.make CMakeFiles/Lab_5_UtPod.dir/song.cpp.s
+>>>>>>> 742a366103686f262d37ef720bb492138b1d8016
 .PHONY : song.cpp.s
 
 # Help Target
@@ -209,7 +272,11 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
+<<<<<<< HEAD
 	@echo ... UtPod
+=======
+	@echo ... Lab_5_UtPod
+>>>>>>> 742a366103686f262d37ef720bb492138b1d8016
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... UtPod.obj

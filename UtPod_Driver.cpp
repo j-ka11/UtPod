@@ -1,5 +1,5 @@
 //
-// Created by chris_d0m8an5 on 10/24/2018.
+// Created by Josh Kall Chris Erattuparambil on 10/24/2018.
 //
 /* utPod_driver.cpp
 Demo Driver for the UtPod.
@@ -21,6 +21,21 @@ using namespace std;
 int main(int argc, char *argv[])
 {
     UtPod t;
+
+    Song song1("Christina Aguilera", "Genie in a Bottle", 3);                       //testing of operation overloads from here
+    Song song2("Lil Wayne", "Dedicate", 4);                                         //
+    bool song1First, song2First;                                                    //
+    if(song1 < song2){                                                              //
+        song1First = true;                                                          //
+        song2First = false;                                                         //
+    }else {                                                                         //
+        song1First = false;                                                         //
+        song2First = true;                                                          //
+    }                                                                               //
+    cout << "song1 is " << song1.getTitle() << " by " << song1.getArtist() << endl;  //
+    cout << "song2 is " << song2.getTitle() << " by " << song2.getArtist() << endl;  //
+    cout << "song1First is " << song1First << endl;                                 //
+    cout << "song2First is " << song2First << endl;                                 //to here
 
     Song s1("Beatles", "Hey Jude1", 4);
     int result = t.addSong(s1);

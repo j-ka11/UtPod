@@ -1,4 +1,27 @@
 "C:\Program Files\JetBrains\CLion 2018.2.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=C:/MinGW/bin/mingw32-make.exe -DCMAKE_C_COMPILER=C:/MinGW/bin/gcc.exe -DCMAKE_CXX_COMPILER=C:/MinGW/bin/g++.exe -G "CodeBlocks - MinGW Makefiles" C:\Users\chris_d0m8an5\CLionProjects\UtPod
--- Configuring done
--- Generating done
--- Build files have been written to: C:/Users/chris_d0m8an5/CLionProjects/UtPod/cmake-build-debug
+CMake Error: Parse error in cache file C:/Users/chris_d0m8an5/CLionProjects/UtPod/cmake-build-debug/CMakeCache.txt on line 2. Offending entry: <<<<<<< HEAD
+CMake Error: Parse error in cache file C:/Users/chris_d0m8an5/CLionProjects/UtPod/cmake-build-debug/CMakeCache.txt on line 6. Offending entry: >>>>>>> 742a366103686f262d37ef720bb492138b1d8016
+CMake Error: Parse error in cache file C:/Users/chris_d0m8an5/CLionProjects/UtPod/cmake-build-debug/CMakeCache.txt on line 42. Offending entry: <<<<<<< HEAD
+CMake Error: Parse error in cache file C:/Users/chris_d0m8an5/CLionProjects/UtPod/cmake-build-debug/CMakeCache.txt on line 48. Offending entry: >>>>>>> 742a366103686f262d37ef720bb492138b1d8016
+CMake Error: Parse error in cache file C:/Users/chris_d0m8an5/CLionProjects/UtPod/cmake-build-debug/CMakeCache.txt on line 76. Offending entry: <<<<<<< HEAD
+CMake Error: Parse error in cache file C:/Users/chris_d0m8an5/CLionProjects/UtPod/cmake-build-debug/CMakeCache.txt on line 82. Offending entry: >>>>>>> 742a366103686f262d37ef720bb492138b1d8016
+CMake Error: Parse error in cache file C:/Users/chris_d0m8an5/CLionProjects/UtPod/cmake-build-debug/CMakeCache.txt on line 129. Offending entry: <<<<<<< HEAD
+CMake Error: Parse error in cache file C:/Users/chris_d0m8an5/CLionProjects/UtPod/cmake-build-debug/CMakeCache.txt on line 133. Offending entry: >>>>>>> 742a366103686f262d37ef720bb492138b1d8016
+CMake Error: Parse error in cache file C:/Users/chris_d0m8an5/CLionProjects/UtPod/cmake-build-debug/CMakeCache.txt on line 138. Offending entry: <<<<<<< HEAD
+CMake Error: Parse error in cache file C:/Users/chris_d0m8an5/CLionProjects/UtPod/cmake-build-debug/CMakeCache.txt on line 144. Offending entry: >>>>>>> 742a366103686f262d37ef720bb492138b1d8016
+CMake Error: Parse error in cache file C:/Users/chris_d0m8an5/CLionProjects/UtPod/cmake-build-debug/CMakeCache.txt on line 176. Offending entry: <<<<<<< HEAD
+CMake Error: Parse error in cache file C:/Users/chris_d0m8an5/CLionProjects/UtPod/cmake-build-debug/CMakeCache.txt on line 180. Offending entry: >>>>>>> 742a366103686f262d37ef720bb492138b1d8016
+CMake Error: Parse error in cache file C:/Users/chris_d0m8an5/CLionProjects/UtPod/cmake-build-debug/CMakeCache.txt on line 203. Offending entry: <<<<<<< HEAD
+CMake Error: Parse error in cache file C:/Users/chris_d0m8an5/CLionProjects/UtPod/cmake-build-debug/CMakeCache.txt on line 208. Offending entry: >>>>>>> 742a366103686f262d37ef720bb492138b1d8016
+CMake Error: Parse error in cache file C:/Users/chris_d0m8an5/CLionProjects/UtPod/cmake-build-debug/CMakeCache.txt on line 266. Offending entry: <<<<<<< HEAD
+CMake Error: Parse error in cache file C:/Users/chris_d0m8an5/CLionProjects/UtPod/cmake-build-debug/CMakeCache.txt on line 276. Offending entry: >>>>>>> 742a366103686f262d37ef720bb492138b1d8016
+CMake Error: Parse error in cache file C:/Users/chris_d0m8an5/CLionProjects/UtPod/cmake-build-debug/CMakeCache.txt on line 286. Offending entry: <<<<<<< HEAD
+CMake Error: Parse error in cache file C:/Users/chris_d0m8an5/CLionProjects/UtPod/cmake-build-debug/CMakeCache.txt on line 290. Offending entry: >>>>>>> 742a366103686f262d37ef720bb492138b1d8016
+CMake Error: Parse error in cache file C:/Users/chris_d0m8an5/CLionProjects/UtPod/cmake-build-debug/CMakeCache.txt on line 296. Offending entry: <<<<<<< HEAD
+CMake Error: Parse error in cache file C:/Users/chris_d0m8an5/CLionProjects/UtPod/cmake-build-debug/CMakeCache.txt on line 300. Offending entry: >>>>>>> 742a366103686f262d37ef720bb492138b1d8016
+CMake Error: Parse error in cache file C:/Users/chris_d0m8an5/CLionProjects/UtPod/cmake-build-debug/CMakeCache.txt on line 377. Offending entry: <<<<<<< HEAD
+CMake Error: Parse error in cache file C:/Users/chris_d0m8an5/CLionProjects/UtPod/cmake-build-debug/CMakeCache.txt on line 387. Offending entry: >>>>>>> 742a366103686f262d37ef720bb492138b1d8016
+CMake Error: Parse error in cache file C:/Users/chris_d0m8an5/CLionProjects/UtPod/cmake-build-debug/CMakeCache.txt on line 425. Offending entry: <<<<<<< HEAD
+CMake Error: Parse error in cache file C:/Users/chris_d0m8an5/CLionProjects/UtPod/cmake-build-debug/CMakeCache.txt on line 429. Offending entry: >>>>>>> 742a366103686f262d37ef720bb492138b1d8016
+CMake Error: The current CMakeCache.txt directory C:/Users/chris_d0m8an5/CLionProjects/UtPod/cmake-build-debug/CMakeCache.txt is different than the directory d:/Documents/EE 312/Labs/Lab 5-UtPod/UtPod/cmake-build-debug where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt
+CMake Error: The source "C:/Users/chris_d0m8an5/CLionProjects/UtPod/CMakeLists.txt" does not match the source "D:/Documents/EE 312/Labs/Lab 5-UtPod/UtPod/CMakeLists.txt" used to generate cache.  Re-run cmake with a different source directory.

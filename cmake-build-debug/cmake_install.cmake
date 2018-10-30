@@ -1,8 +1,16 @@
+<<<<<<< HEAD
 # Install script for directory: C:/Users/chris_d0m8an5/CLionProjects/UtPod
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
   set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/UtPod")
+=======
+# Install script for directory: D:/Documents/EE 312/Labs/Lab 5-UtPod/UtPod
+
+# Set the install prefix
+if(NOT DEFINED CMAKE_INSTALL_PREFIX)
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/Lab_5_UtPod")
+>>>>>>> 742a366103686f262d37ef720bb492138b1d8016
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -40,5 +48,9 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
+<<<<<<< HEAD
 file(WRITE "C:/Users/chris_d0m8an5/CLionProjects/UtPod/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+=======
+file(WRITE "D:/Documents/EE 312/Labs/Lab 5-UtPod/UtPod/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+>>>>>>> 742a366103686f262d37ef720bb492138b1d8016
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

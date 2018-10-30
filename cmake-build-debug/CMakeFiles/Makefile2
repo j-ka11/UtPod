@@ -58,6 +58,7 @@ RM = "C:\Program Files\JetBrains\CLion 2018.2.2\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
+<<<<<<< HEAD
 CMAKE_SOURCE_DIR = C:\Users\chris_d0m8an5\CLionProjects\UtPod
 
 # The top-level build directory on which CMake was run.
@@ -75,10 +76,30 @@ CMakeFiles/UtPod.dir/all:
 
 # Include target in all.
 all: CMakeFiles/UtPod.dir/all
+=======
+CMAKE_SOURCE_DIR = "D:\Documents\EE 312\Labs\Lab 5-UtPod\UtPod"
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = "D:\Documents\EE 312\Labs\Lab 5-UtPod\UtPod\cmake-build-debug"
+
+#=============================================================================
+# Target rules for target CMakeFiles/Lab_5_UtPod.dir
+
+# All Build rule for target.
+CMakeFiles/Lab_5_UtPod.dir/all:
+	$(MAKE) -f CMakeFiles\Lab_5_UtPod.dir\build.make CMakeFiles/Lab_5_UtPod.dir/depend
+	$(MAKE) -f CMakeFiles\Lab_5_UtPod.dir\build.make CMakeFiles/Lab_5_UtPod.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\Documents\EE 312\Labs\Lab 5-UtPod\UtPod\cmake-build-debug\CMakeFiles" --progress-num=1,2,3,4 "Built target Lab_5_UtPod"
+.PHONY : CMakeFiles/Lab_5_UtPod.dir/all
+
+# Include target in all.
+all: CMakeFiles/Lab_5_UtPod.dir/all
+>>>>>>> 742a366103686f262d37ef720bb492138b1d8016
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
+<<<<<<< HEAD
 CMakeFiles/UtPod.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\chris_d0m8an5\CLionProjects\UtPod\cmake-build-debug\CMakeFiles 4
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/UtPod.dir/all
@@ -97,6 +118,26 @@ CMakeFiles/UtPod.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/UtPod.dir/clean
+=======
+CMakeFiles/Lab_5_UtPod.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "D:\Documents\EE 312\Labs\Lab 5-UtPod\UtPod\cmake-build-debug\CMakeFiles" 4
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/Lab_5_UtPod.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "D:\Documents\EE 312\Labs\Lab 5-UtPod\UtPod\cmake-build-debug\CMakeFiles" 0
+.PHONY : CMakeFiles/Lab_5_UtPod.dir/rule
+
+# Convenience name for target.
+Lab_5_UtPod: CMakeFiles/Lab_5_UtPod.dir/rule
+
+.PHONY : Lab_5_UtPod
+
+# clean rule for target.
+CMakeFiles/Lab_5_UtPod.dir/clean:
+	$(MAKE) -f CMakeFiles\Lab_5_UtPod.dir\build.make CMakeFiles/Lab_5_UtPod.dir/clean
+.PHONY : CMakeFiles/Lab_5_UtPod.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/Lab_5_UtPod.dir/clean
+>>>>>>> 742a366103686f262d37ef720bb492138b1d8016
 
 .PHONY : clean
 

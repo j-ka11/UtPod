@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/.idea/UtPod.iml" filepath="$PROJECT_DIR$/.idea/UtPod.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/.idea/Lab 5-UtPod.iml" filepath="$PROJECT_DIR$/.idea/Lab 5-UtPod.iml" />
+>>>>>>> 742a366103686f262d37ef720bb492138b1d8016
     </modules>
   </component>
 </project>

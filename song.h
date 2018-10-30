@@ -12,12 +12,18 @@ using namespace std;
 
 class Song{
     private:
-        string title;
         string artist;
+        string title;
         int size;
     public:
         void createSong();
+<<<<<<< HEAD
         string getTitle();
+=======
+
+        string getTitle();
+
+>>>>>>> 742a366103686f262d37ef720bb492138b1d8016
         string getArtist();
         int getSize();
         void setTitle(string t);
@@ -26,7 +32,11 @@ class Song{
 
         bool operator >(Song const &rhs);
 
-        Song(string title, string artist, int size);
-        Song(string title, string artist);
+        bool operator <(Song const &rhs);
+
+        bool operator ==(Song const &rhs);
+
+        Song(string artist, string title, int size);
+        Song(string artist, string title);
 };
 
