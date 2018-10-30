@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-C:/Users/chris_d0m8an5/CLionProjects/UtPod/cmake-build-debug/CMakeFiles/UtPod.dir
-C:/Users/chris_d0m8an5/CLionProjects/UtPod/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/chris_d0m8an5/CLionProjects/UtPod/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-=======
-D:/Documents/EE 312/Labs/Lab 5-UtPod/UtPod/cmake-build-debug/CMakeFiles/Lab_5_UtPod.dir
+D:/Documents/EE 312/Labs/Lab 5-UtPod/UtPod/cmake-build-debug/CMakeFiles/UtPod.dir
 D:/Documents/EE 312/Labs/Lab 5-UtPod/UtPod/cmake-build-debug/CMakeFiles/edit_cache.dir
 D:/Documents/EE 312/Labs/Lab 5-UtPod/UtPod/cmake-build-debug/CMakeFiles/rebuild_cache.dir
->>>>>>> 742a366103686f262d37ef720bb492138b1d8016

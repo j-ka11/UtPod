@@ -17,13 +17,8 @@ class Song{
         int size;
     public:
         void createSong();
-<<<<<<< HEAD
-        string getTitle();
-=======
-
         string getTitle();
 
->>>>>>> 742a366103686f262d37ef720bb492138b1d8016
         string getArtist();
         int getSize();
         void setTitle(string t);
