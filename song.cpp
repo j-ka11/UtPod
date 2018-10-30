@@ -89,7 +89,7 @@ bool Song::operator >(Song const &rhs){
  * Song class returns true if the artist, title, and
  * size of the two songs are identical, otherwise it
  * returns false*/
-bool Song::operator==(Song const &rhs) {
+bool Song::operator ==(Song const &rhs) {
     if((this->artist.compare(rhs.artist)) == 0) {
         if ((this->title.compare(rhs.title)) == 0) {
             if (this->size == rhs.size) {
