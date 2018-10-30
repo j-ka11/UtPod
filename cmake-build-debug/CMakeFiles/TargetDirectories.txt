@@ -1,0 +1,3 @@
+C:/Users/chris_d0m8an5/CLionProjects/UtPod/cmake-build-debug/CMakeFiles/UtPod.dir
+C:/Users/chris_d0m8an5/CLionProjects/UtPod/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/chris_d0m8an5/CLionProjects/UtPod/cmake-build-debug/CMakeFiles/rebuild_cache.dir

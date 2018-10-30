@@ -9,11 +9,21 @@ UtPod::UtPod(){
     return;
 }
 
-UtPod::UtPod(int s){
-    memSize = s;
+UtPod::UtPod(int s)
+{
+   if(s<0||s>MAX_MEMORY)
+   {
+       memSize = MAX_MEMORY;
+   }
+   else
+   {
+       memSize=s;
+   }
 }
 
-UtPod::~UtPod(){
+UtPod::~UtPod()
+{
+
 }
 
 

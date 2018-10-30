@@ -4,7 +4,7 @@
 
 #include "song.h"
 
-
+//Constructors
 Song::Song(string t, string a){
    title = t;
    artist = a;
@@ -16,7 +16,7 @@ Song::Song(string t, string a, int s){
    artist = a;
    size = s;
 }
-
+// Getters
 int Song::getSize(){
     return size;
 }
@@ -25,6 +25,19 @@ string Song::getArtist(){
     return artist;
 }
 
+//Setters
+void Song::setTitle(string t)
+{
+    title=t;
+}
+void Song::setArtist(string a){
+    artist=a;
+}
+void Song::setSize(int newsize)
+{
+    size=newsize;
+}
+//Operator Overides
 bool Song::operator >(Song const &rhs){
     if((this->artist.compare(rhs.artist)) > 0){
         return true;

@@ -17,12 +17,12 @@ class Song{
         int size;
     public:
         void createSong();
-        string getTitle(){
-            return title;
-        }
+        string getTitle();
         string getArtist();
-
         int getSize();
+        void setTitle(string t);
+        void setArtist(string a);
+        void setSize(int size);
 
         bool operator >(Song const &rhs);
 
