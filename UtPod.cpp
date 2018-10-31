@@ -3,6 +3,7 @@
 //
 #include "UtPod.h"
 #include <iostream>
+#include <ctime>
 
 using namespace std;
 
@@ -26,27 +27,31 @@ UtPod::UtPod(int s)
 
 UtPod::~UtPod()
 {
-
+    SongNode *temp1 = songs;
+    SongNode *temp2 = songs->next;
+    while(temp1 != NULL){
+        delete temp1;
+        temp1 = temp2;
+        temp2 = temp1->next;
+    }
 }
 
 
 int UtPod::addSong(Song const &s){
-    SongNode *temp;
-    temp=songs;
-    songs->s=s;
-    songs->next=temp;
+    SongNode *temp = new SongNode;
+    temp->s = s;
+    temp->next=songs;
+    songs = temp;
 }
 
 
 
 int UtPod::removeSong(Song const &s){
-    SongNode *temp;
-    SongNode *trailer;
+    SongNode *temp = songs->next;
+    SongNode *trailer = songs;
     if(songs->s == s)
     {songs=songs->next;
     }else {
-        temp = songs->next;
-        trailer = songs;
         while (((temp->s > s) || (temp->s < s)) && (temp->next != NULL)) {
             temp = temp->next;
             trailer = trailer->next;
@@ -61,13 +66,48 @@ int UtPod::removeSong(Song const &s){
 }
 
 void UtPod::shuffle(){
-    
+    SongNode *temp1 = songs;
+    SongNode *trailer1 = songs;
+    temp1 = songs;
+    int size = 0;
+    while(temp1 != NULL){
+        size++;
+        temp1 = temp1->next;
+    }
+    if(size >= 2){
+        size = size - 2;
+    }
+    temp1 = songs->next;
 
+    unsigned int timeSeed = 42;
+    srand(timeSeed);
+    while(temp1 != NULL){
+        int numTraverse = (rand() % size) + 1;
+        SongNode *temp2 = (songs->next)->next;
+        SongNode *trailer2 = songs->next;
+        for(int i = 0;i < numTraverse;i++){
+            temp2 = temp2->next;
+            trailer2 = trailer2->next;
+        }
+        swap(*temp1, *temp2, *trailer1, *trailer2);
+        temp1 = temp1->next;
+        trailer1 = trailer1->next;
+    }
+    int numTraverse = (rand() % size) + 1;
+    temp1 = songs;
+    SongNode *temp2 = songs->next;
+    SongNode *trailer2 = songs;
+    for(int i = 0;i < numTraverse;i++){
+        temp2 = temp2->next;
+        trailer2 = trailer2->next;
+    }
+    songs = temp2;
+    songs->next=temp1;
+    trailer2->next=temp2->next;
 }
 
 void UtPod::showSongList(){
-    SongNode *temp;
-    temp = songs;
+    SongNode *temp = songs;
     while(temp != NULL){
         cout << temp->s.getTitle() <<endl;
         temp = temp->next;
@@ -75,11 +115,10 @@ void UtPod::showSongList(){
 }
 
 void UtPod::sortSongList(){
-    SongNode *temp1, *temp2, *trailer1, *trailer2;
-    temp1 = songs->next;
-    temp2 = temp1->next;
-    trailer1 = songs;
-    trailer2 = songs->next;
+    SongNode *temp1 = songs->next;
+    SongNode *temp2 = temp1->next;
+    SongNode *trailer1 = songs;
+    SongNode *trailer2 = songs->next;
     while(temp1 != NULL){
         while(temp2 != NULL){
             if(temp2->s < temp1->s){
@@ -95,10 +134,8 @@ void UtPod::sortSongList(){
         return;
     }
     else{
-        SongNode *temp3;
-        SongNode *trailer3;
-        temp3=songs->next;
-        trailer3=songs;
+        SongNode *temp3=songs->next;
+        SongNode *trailer3=songs;
         while(temp3->next!=NULL)
         {
             if(songs->s>temp3->s)
@@ -120,8 +157,7 @@ void UtPod::sortSongList(){
 
 int UtPod::getRemainingMemory(){
     int memoryTotal = 0;
-    SongNode *temp;
-    temp = songs;
+    SongNode *temp = songs;
     while(temp != NULL){
         memoryTotal = memoryTotal + temp->s.getSize();
         temp = temp->next;
