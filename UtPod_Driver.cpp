@@ -24,7 +24,9 @@ int main(int argc, char *argv[])
 
     Song song1("Christina Aguilera", "Genie in a Bottle", 3);                       //testing of operation overloads from here
     Song song2("Lil Wayne", "Dedicate", 4);                                         //
+    Song song3("Lil Wayne", "Uproar", 4);                                           //
     bool song1First, song2First;                                                    //
+    bool dedicateIsFirst, uproarIsFirst;                                            //
     if(song1 < song2){                                                              //
         song1First = true;                                                          //
         song2First = false;                                                         //
@@ -32,10 +34,20 @@ int main(int argc, char *argv[])
         song1First = false;                                                         //
         song2First = true;                                                          //
     }                                                                               //
+    if(song3 > song2){                                                              //
+        dedicateIsFirst = true;                                                     //
+        uproarIsFirst = false;                                                      //
+    }else{                                                                          //
+        dedicateIsFirst = false;                                                    //
+        uproarIsFirst = true;                                                       //
+    }                                                                               //
     cout << "song1 is " << song1.getTitle() << " by " << song1.getArtist() << endl; //
     cout << "song2 is " << song2.getTitle() << " by " << song2.getArtist() << endl; //
+    cout << "song3 is " << song3.getTitle() << " by " << song3.getArtist() << endl; //
     cout << "song1First is " << song1First << endl;                                 //
-    cout << "song2First is " << song2First << endl;                                 //to here
+    cout << "song2First is " << song2First << endl;                                 //
+    cout << "dedicateIsFirst is " << dedicateIsFirst << endl;                       //
+    cout << "uproarIsFirst is " << uproarIsFirst << endl;                           //to here
 
     Song s1("Beatles", "Hey Jude1", 4);
     int result = t.addSong(s1);
