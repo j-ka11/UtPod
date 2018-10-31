@@ -37,13 +37,16 @@ void Song::setTitle(string t)
 {
     title=t;
 }
+
 void Song::setArtist(string a){
     artist=a;
 }
+
 void Song::setSize(int newsize)
 {
     size=newsize;
 }
+
 //Operator Overides
 /*Using this operator on two instances of the
  * Song class will first compare the artists, then

@@ -32,8 +32,8 @@ int main(int argc, char *argv[])
         song1First = false;                                                         //
         song2First = true;                                                          //
     }                                                                               //
-    cout << "song1 is " << song1.getTitle() << " by " << song1.getArtist() << endl;  //
-    cout << "song2 is " << song2.getTitle() << " by " << song2.getArtist() << endl;  //
+    cout << "song1 is " << song1.getTitle() << " by " << song1.getArtist() << endl; //
+    cout << "song2 is " << song2.getTitle() << " by " << song2.getArtist() << endl; //
     cout << "song1First is " << song1First << endl;                                 //
     cout << "song2First is " << song2First << endl;                                 //to here
 

@@ -16,19 +16,16 @@ class Song{
         string title;
         int size;
     public:
-        void createSong();
         string getTitle();
-
         string getArtist();
         int getSize();
+
         void setTitle(string t);
         void setArtist(string a);
         void setSize(int size);
 
         bool operator >(Song const &rhs);
-
         bool operator <(Song const &rhs);
-
         bool operator ==(Song const &rhs);
 
         Song(string artist, string title, int size);
