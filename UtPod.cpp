@@ -27,6 +27,10 @@ UtPod::UtPod(int s)
 
 UtPod::~UtPod()
 {
+    clearMemory();
+}
+
+void UtPod::clearMemory(){
     SongNode *temp1 = songs;
     SongNode *temp2 = songs->next;
     while(temp1 != NULL){
@@ -35,7 +39,6 @@ UtPod::~UtPod()
         temp2 = temp1->next;
     }
 }
-
 
 int UtPod::addSong(Song const &s){
     SongNode *temp = new SongNode;
