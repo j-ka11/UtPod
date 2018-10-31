@@ -9,12 +9,13 @@ using namespace std;
 
 
 UtPod::UtPod(){
+    songs = NULL;
     memSize = MAX_MEMORY;
     return;
 }
 
-UtPod::UtPod(int s)
-{
+UtPod::UtPod(int s){
+   songs = NULL;
    if(s<0||s>MAX_MEMORY)
    {
        memSize = MAX_MEMORY;
@@ -41,11 +42,16 @@ void UtPod::clearMemory(){
 }
 
 int UtPod::addSong(Song const &s){
-    SongNode *temp;
-    temp = new SongNode;
-    temp->s = s;
-    temp->next=songs;
-    songs = temp;
+    if(getRemainingMemory() >= s.getSize()) {
+        SongNode *temp;
+        temp = new SongNode;
+        temp->s = s;
+        temp->next = songs;
+        songs = temp;
+        return SUCCESS;
+    }else{
+        return NO_MEMORY;
+    }
 }
 
 

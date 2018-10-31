@@ -16,9 +16,9 @@ class Song{
         string title;
         int size;
     public:
-        string getTitle();
-        string getArtist();
-        int getSize();
+        string getTitle() const;
+        string getArtist() const;
+        int getSize() const;
 
         void setTitle(string t);
         void setArtist(string a);

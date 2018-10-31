@@ -23,15 +23,15 @@ Song::Song(string a, string t, int s){
 }
 
 // Getters
-string Song::getTitle(){
+string Song::getTitle() const{
     return title;
 }
 
-int Song::getSize(){
+int Song::getSize() const{
     return size;
 }
 
-string Song::getArtist(){
+string Song::getArtist() const{
     return artist;
 }
 
