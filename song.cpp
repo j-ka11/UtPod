@@ -11,15 +11,15 @@ Song::Song(){
 }
 
 Song::Song(string a, string t){
-   setArtist(a);
-   setTitle(t);
-   setSize(1);
+    setArtist(a);
+    setTitle(t);
+    setSize(1);
 }
 
 Song::Song(string a, string t, int s){
-   setArtist(a);
-   setTitle(t);
-   setSize(s);
+    setArtist(a);
+    setTitle(t);
+    setSize(s);
 }
 
 // Getters
@@ -69,9 +69,9 @@ bool Song::operator >(Song const &rhs){
             return false;
         }else{
             if(this->size < rhs.size){
-                return true;
-            }else if(this->size > rhs.size){
                 return false;
+            }else if(this->size > rhs.size){
+                return true;
             }else{
                 return false;
             }
@@ -98,9 +98,9 @@ bool Song::operator <(Song const &rhs){
             return true;
         }else{
             if(this->size < rhs.size){
-                return false;
-            }else if(this->size > rhs.size){
                 return true;
+            }else if(this->size > rhs.size){
+                return false;
             }else{
                 return false;
             }
@@ -119,6 +119,14 @@ bool Song::operator ==(Song const &rhs) {
                 return true;
             }
         }
+    }else{
+        return false;
+    }
+}
+
+bool Song::operator !=(Song const &rhs){
+    if((*this > rhs) | (*this < rhs)) {
+        return true;
     }else{
         return false;
     }

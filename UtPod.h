@@ -24,7 +24,7 @@ private:
     SongNode *songs;  //the head pointer
 
     int memSize;
-    void swap(SongNode &n1, SongNode &n2, SongNode &trailer1, SongNode &trailer2);
+    void swap(SongNode *n1, SongNode *n2);
 public:
     //Default constructor
     //set the memory size to MAX_MEMORY
@@ -121,9 +121,7 @@ public:
        output parms -
     */
 
-    int getTotalMemory() {
-        return memSize;
-    }
+    int getTotalMemory();
 
 
 

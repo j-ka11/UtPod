@@ -11,25 +11,26 @@ using namespace std;
 #include <string>
 
 class Song{
-    private:
-        string artist;
-        string title;
-        int size;
-    public:
-        string getTitle() const;
-        string getArtist() const;
-        int getSize() const;
+private:
+    string artist;
+    string title;
+    int size;
+public:
+    string getTitle() const;
+    string getArtist() const;
+    int getSize() const;
 
-        void setTitle(string t);
-        void setArtist(string a);
-        void setSize(int size);
+    void setTitle(string t);
+    void setArtist(string a);
+    void setSize(int size);
 
-        bool operator >(Song const &rhs);
-        bool operator <(Song const &rhs);
-        bool operator ==(Song const &rhs);
+    bool operator >(Song const &rhs);
+    bool operator <(Song const &rhs);
+    bool operator ==(Song const &rhs);
+    bool operator !=(Song const &rhs);
 
-        Song();
-        Song(string artist, string title, int size);
-        Song(string artist, string title);
+    Song();
+    Song(string artist, string title, int size);
+    Song(string artist, string title);
 };
 
