@@ -141,11 +141,13 @@ int main(int argc, char *argv[])
     cout<<"displayed list\n\n";
     Song s11("Lil Wayne", "Dedicate", 250);
     t.addSong(s11);
-    Song s12 ("cristina Aquilera", "Genie in a Bottle", 30);
+    Song s12 ("Cristina Aquilera", "Genie in a Bottle", 300);
     t.addSong(s12);
     //t.showSongList();
     Song s13 ("cristina Aquilera", "Genie in a Bottle", 30);
     t.addSong(s13);
+    Song s14 ("cristina Aquilera", "Genie in a Bottle", 30);
+    t.addSong(s14);
     t.showSongList();
     cout<<"added three songs"<<endl;
     t.removeSong(s13);
@@ -156,6 +158,7 @@ int main(int argc, char *argv[])
     cout<<"\n\n";
     t.sortSongList();
     t.showSongList();
+
 
    /* Song song1("Christina Aguilera", "Genie in a Bottle", 3);                       //testing of operation overloads from here
     Song song2("Lil Wayne", "Dedicate", 4);                                         //
