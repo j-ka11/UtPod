@@ -21,11 +21,11 @@ using namespace std;
 int main(int argc, char *argv[])
 {
     UtPod t;
-
+    int result;
+/*
     //0 Songs in UtPod
     t.showSongList();
     cout << "called showSongList" << endl;
-    int result;
     Song testingZero("Beatles", "Hey Jude1", 4);
     cout << "created a test song" << endl;
     result = t.removeSong(testingZero);
@@ -91,9 +91,41 @@ int main(int argc, char *argv[])
     cout << "result of removing a song with 2 song is " << resultremoveTwo << endl;
     t.showSongList();
     cout << "printed song list" << endl;
+    t.clearMemory();
     cout << "\n\n\n";
+*/
+    //testing 10 songs
+    cout << "testing 10 songs in the UtPod" << endl;
+    result = 0;
+    Song s1("Drake", "Nonstop", 10);
+    result = t.addSong(s1);
+    Song s2("Travis Scott", "5% Tint", 11);
+    result = result + t.addSong(s2);
+    Song s3("Travis Scott ft. The Weeknd", "Wake up", 15);
+    result = result + t.addSong(s3);
+    t.sortSongList();
+    t.showSongList();
+    cout << "printed sorted song list" << endl;
+    /*Song s4("A$AP Rocky", "Praise the Lord", 12);
+    result = result + t.addSong(s4);
+    Song s5("Beatles", "Hey Jude", 4);
+    result = result + t.addSong(s5);
+    Song s6("Nicki Minaj", "Good Form", 20);
+    result = result + t.addSong(s6);
+    Song s7("Kendrick Lamar", "Alright", 8);
+    result = result + t.addSong(s7);
+    Song s8("Dua Lipa", "Hey Jude", 23);
+    result = result + t.addSong(s8);
+    Song s9("Drake", "Nonstop", 11);
+    result = result + t.addSong(s9);
+    Song s10("Logic", "Alright", 8);
+    result = result + t.addSong(s10);
+    cout << "total result of adding 10 songs is " << result << endl;
+    t.showSongList();
+    t.sortSongList();
+    cout << "sorted songs" << endl;
+    t.showSongList();*/
 
-    
 
 
 

@@ -37,10 +37,12 @@ void UtPod::clearMemory() {
         delete temp1;
         temp1 = temp2;
         if(temp2 == NULL){
+            songs = NULL;
             return;
         }
         temp2 = temp1->next;
     }
+    songs = NULL;
 }
 
 int UtPod::addSong(Song const &s) {
@@ -129,7 +131,7 @@ void UtPod::shuffle() {
                 temp2 = temp2->next;
                 trailer2 = trailer2->next;
             }
-            swap(*temp1, *temp2, *trailer1, *trailer2);
+            swap(temp1, temp2, trailer1, trailer2);
             temp1 = temp1->next;
             trailer1 = trailer1->next;
         }
@@ -155,7 +157,7 @@ void UtPod::showSongList() {
     }
 }
 
-void UtPod::sortSongList() {
+/*void UtPod::sortSongList() {
     if(songs == NULL){
         cout << "there are no songs when trying to sort" << endl;
         return;
@@ -195,6 +197,60 @@ void UtPod::sortSongList() {
         }
         return;
     }
+}*/
+
+void UtPod::sortSongList() {
+    if(songs == NULL){
+        cout << "there are no songs when trying to sort" << endl;
+        return;
+    }else if(songs->next == NULL){
+        cout << "there is one song when trying to sort" << endl;
+    }else {
+        SongNode *temp1 = songs->next;
+        SongNode *temp2 = temp1->next;
+        SongNode *temp3 = songs->next;
+        SongNode *trailer1 = songs;
+        SongNode *trailer2 = songs->next;
+        while (temp1 != NULL) {
+            while (temp2 != NULL) {
+                if (temp2->s < temp1->s) {
+                    swap(temp1, temp2, trailer1, trailer2);
+                    temp3 = temp1;
+                    temp1 = temp2;
+                    temp2 = temp3;
+                } else {
+                    temp2 = temp2->next;
+                }
+            }
+            temp1 = temp1->next;
+        }
+        if (songs->s < songs->next->s) {
+            return;
+        } else {
+            SongNode *temp4 = songs->next;
+            SongNode *trailer4 = songs;
+            while (temp4 != NULL) {
+                if (songs->s > temp4->s) {
+                    temp4 = temp4->next;
+                    trailer4 = trailer4->next;
+                } else {
+                    SongNode *tempHead = songs;
+                    trailer4->next = tempHead;
+                    tempHead->next = temp4;
+                    songs = songs->next;
+                    return;
+                }
+            }
+            if(temp4 == NULL){
+                SongNode *temporaryHead = songs;
+                songs = songs->next;
+                trailer4->next = temporaryHead;
+                temporaryHead->next = NULL;
+            }
+
+        }
+        return;
+    }
 }
 
 int UtPod::getTotalMemory() {
@@ -221,11 +277,11 @@ int UtPod::getRemainingMemory() {
     return (memSize - memoryTotal);
 }
 
-void UtPod::swap(SongNode &n1, SongNode &n2, SongNode &trailer1, SongNode &trailer2) {
-    trailer1.next = &n2;
-    trailer2.next = &n1;
+void UtPod::swap(SongNode *n1, SongNode *n2, SongNode *trailer1, SongNode *trailer2) {
+    trailer1->next = n2;
+    trailer2->next = n1;
     SongNode *temp;
-    temp = n1.next;
-    n1.next = n2.next;
-    n2.next = temp;
+    temp = n1->next;
+    n1->next = n2->next;
+    n2->next = temp;
 }
