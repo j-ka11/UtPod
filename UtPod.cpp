@@ -74,16 +74,16 @@ int UtPod::removeSong(Song const &s) {
         if (songs->s == s) {
             songs = songs->next;
         } else {
-            while (((temp->s > s) || (temp->s < s)) && (temp->next != NULL)) {
+            while (((temp->s > s) || (temp->s < s)) && (temp != NULL)) {
                 temp = temp->next;
                 trailer = trailer->next;
             }
-            SongNode *newTemp = temp;
-            trailer->next = temp->next;
-            delete newTemp;
-            if (temp->next == NULL) {
+            if (temp == NULL) {
                 return NOT_FOUND;
             } else {
+                SongNode *newTemp = temp;
+                trailer->next = temp->next;
+                delete newTemp;
                 return SUCCESS;
             }
         }
@@ -100,7 +100,12 @@ void UtPod::shuffle() {
     } else if (songs->next == NULL) {
         cout << "there is one song when trying to shuffle" << endl;
         return;
-    } else {
+    } else if(songs->next->next==NULL){
+       SongNode *twoSongs=songs->next;
+       twoSongs->next=songs;
+       songs->next=NULL;
+       songs=twoSongs;
+    }else {
         SongNode *temp1;
         SongNode *trailer1 = songs;
         temp1 = songs;

@@ -62,9 +62,38 @@ int main(int argc, char *argv[])
     cout << "result of removing a song with 1 song is " << result << endl;
     t.showSongList();
     cout << "printed song list" << endl;
+    t.clearMemory();
+    cout<<"cleared mem"<<endl;
     cout << "\n\n\n";
 
     //testing 2 songs
+    cout << "testing for 2 song in UtPod" << endl;
+    Song testingTwo("Drake", "Nonstop", 5);
+    result = t.addSong(testingTwo);
+    cout << "result of adding a song is " << result << endl;
+    Song testingThree("Travis Scott ft. Weeknd", "Wake Up", 4);
+    result = t.addSong(testingThree);
+    cout << "result of adding a song is " << result << endl;
+    t.showSongList();
+    t.shuffle();
+    cout << "finished shuffle" << endl;
+    t.showSongList();
+    cout << "printed song list" << endl;
+    t.sortSongList();
+    cout << "finished sorting" << endl;
+    t.showSongList();
+    cout << "finished the last showSongList" << endl;
+    totalMemory = t.getTotalMemory();
+    cout << "total memory in UtPod is " << totalMemory << endl;
+    remainingMemory = t.getRemainingMemory();
+    cout << "remaining memory for songs is " << remainingMemory << endl;
+    int resultremoveTwo = t.removeSong(testingThree);
+    cout << "result of removing a song with 2 song is " << resultremoveTwo << endl;
+    t.showSongList();
+    cout << "printed song list" << endl;
+    cout << "\n\n\n";
+
+    
 
 
 
