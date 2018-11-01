@@ -131,7 +131,7 @@ void UtPod::shuffle() {
                 temp2 = temp2->next;
                 trailer2 = trailer2->next;
             }
-            swap(temp1, temp2, trailer1, trailer2);
+            swap(temp1, temp2);
             temp1 = temp1->next;
             trailer1 = trailer1->next;
         }
@@ -199,7 +199,7 @@ void UtPod::showSongList() {
     }
 }*/
 
-void UtPod::sortSongList() {
+/*void UtPod::sortSongList() {
     if(songs == NULL){
         cout << "there are no songs when trying to sort" << endl;
         return;
@@ -245,11 +245,33 @@ void UtPod::sortSongList() {
                 SongNode *temporaryHead = songs;
                 songs = songs->next;
                 trailer4->next = temporaryHead;
+                temporaryHead = temp4;
                 temporaryHead->next = NULL;
             }
 
         }
         return;
+    }
+}*/
+
+void UtPod::sortSongList() {
+    if(songs == NULL){
+        cout << "there are no songs when trying to sort" << endl;
+        return;
+    }else if(songs->next == NULL){
+        cout << "there is one song when trying to sort" << endl;
+    }else{
+        SongNode *temp1 = songs;
+        while(temp1->next != NULL){
+            SongNode *temp2 = temp1->next;
+            while(temp2 != NULL){
+                if(temp1->s > temp2->s){
+                    swap(temp1, temp2);
+                }
+                temp2 = temp2->next;
+            }
+            temp1 = temp1->next;
+        }
     }
 }
 
@@ -277,11 +299,14 @@ int UtPod::getRemainingMemory() {
     return (memSize - memoryTotal);
 }
 
-void UtPod::swap(SongNode *n1, SongNode *n2, SongNode *trailer1, SongNode *trailer2) {
-    trailer1->next = n2;
-    trailer2->next = n1;
-    SongNode *temp;
-    temp = n1->next;
-    n1->next = n2->next;
-    n2->next = temp;
+void UtPod::swap(SongNode *n1, SongNode *n2) {
+    string artist = n1->s.getArtist();
+    string title = n1->s.getTitle();
+    int size = n1->s.getSize();
+    n1->s.setArtist(n2->s.getArtist());
+    n1->s.setTitle(n2->s.getTitle());
+    n1->s.setSize(n2->s.getSize());
+    n2->s.setArtist(artist);
+    n2->s.setTitle(title);
+    n2->s.setSize(size);
 }

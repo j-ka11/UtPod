@@ -103,10 +103,7 @@ int main(int argc, char *argv[])
     result = result + t.addSong(s2);
     Song s3("Travis Scott ft. The Weeknd", "Wake up", 15);
     result = result + t.addSong(s3);
-    t.sortSongList();
-    t.showSongList();
-    cout << "printed sorted song list" << endl;
-    /*Song s4("A$AP Rocky", "Praise the Lord", 12);
+    Song s4("A$AP Rocky", "Praise the Lord", 12);
     result = result + t.addSong(s4);
     Song s5("Beatles", "Hey Jude", 4);
     result = result + t.addSong(s5);
@@ -123,8 +120,8 @@ int main(int argc, char *argv[])
     cout << "total result of adding 10 songs is " << result << endl;
     t.showSongList();
     t.sortSongList();
-    cout << "sorted songs" << endl;
-    t.showSongList();*/
+    cout << "sorted songs\n" << endl;
+    t.showSongList();
 
 
 
