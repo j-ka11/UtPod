@@ -4,6 +4,7 @@
 #include "UtPod.h"
 #include <iostream>
 #include <ctime>
+#include <cstdlib>
 
 using namespace std;
 
@@ -109,7 +110,6 @@ void UtPod::shuffle() {
        songs=twoSongs;
     }else {
         SongNode *temp1;
-        SongNode *trailer1 = songs;
         temp1 = songs;
         int size = 0;
         while (temp1 != NULL) {
@@ -119,33 +119,18 @@ void UtPod::shuffle() {
         if (size >= 2) {
             size = size - 2;
         }
-        temp1 = songs->next;
-
-        unsigned int timeSeed = 42;
+        temp1 = songs;
+        unsigned int timeSeed = time(0);
         srand(timeSeed);
-        while (temp1 != NULL) {
+        while (temp1 != NULL){
             int numTraverse = (rand() % size) + 1;
-            SongNode *temp2 = (songs->next)->next;
-            SongNode *trailer2 = songs->next;
+            SongNode *temp2 = songs->next;;
             for (int i = 0; i < numTraverse; i++) {
                 temp2 = temp2->next;
-                trailer2 = trailer2->next;
             }
             swap(temp1, temp2);
             temp1 = temp1->next;
-            trailer1 = trailer1->next;
         }
-        int numTraverse = (rand() % size) + 1;
-        temp1 = songs;
-        SongNode *temp2 = songs->next;
-        SongNode *trailer2 = songs;
-        for (int i = 0; i < numTraverse; i++) {
-            temp2 = temp2->next;
-            trailer2 = trailer2->next;
-        }
-        songs = temp2;
-        songs->next = temp1;
-        trailer2->next = temp2->next;
     }
 }
 
@@ -156,103 +141,6 @@ void UtPod::showSongList() {
         temp = temp->next;
     }
 }
-
-/*void UtPod::sortSongList() {
-    if(songs == NULL){
-        cout << "there are no songs when trying to sort" << endl;
-        return;
-    }else if(songs->next == NULL){
-        cout << "there is one song when trying to sort" << endl;
-    }else {
-        SongNode *temp1 = songs->next;
-        SongNode *temp2 = temp1->next;
-        SongNode *trailer1 = songs;
-        SongNode *trailer2 = songs->next;
-        while (temp1 != NULL) {
-            while (temp2 != NULL) {
-                if (temp2->s < temp1->s) {
-                    swap(*temp1, *temp2, *trailer1, *trailer2);
-                } else {
-                    temp2 = temp2->next;
-                }
-            }
-            temp1 = temp1->next;
-        }
-        if (songs->s < songs->next->s) {
-            return;
-        } else {
-            SongNode *temp3 = songs->next;
-            SongNode *trailer3 = songs;
-            while (temp3->next != NULL) {
-                if (songs->s > temp3->s) {
-                    temp3 = temp3->next;
-                } else {
-                    SongNode *tempHead = songs->next;
-                    trailer3->next = songs;
-                    songs->next = temp3;
-                    songs = tempHead;
-                }
-            }
-
-        }
-        return;
-    }
-}*/
-
-/*void UtPod::sortSongList() {
-    if(songs == NULL){
-        cout << "there are no songs when trying to sort" << endl;
-        return;
-    }else if(songs->next == NULL){
-        cout << "there is one song when trying to sort" << endl;
-    }else {
-        SongNode *temp1 = songs->next;
-        SongNode *temp2 = temp1->next;
-        SongNode *temp3 = songs->next;
-        SongNode *trailer1 = songs;
-        SongNode *trailer2 = songs->next;
-        while (temp1 != NULL) {
-            while (temp2 != NULL) {
-                if (temp2->s < temp1->s) {
-                    swap(temp1, temp2, trailer1, trailer2);
-                    temp3 = temp1;
-                    temp1 = temp2;
-                    temp2 = temp3;
-                } else {
-                    temp2 = temp2->next;
-                }
-            }
-            temp1 = temp1->next;
-        }
-        if (songs->s < songs->next->s) {
-            return;
-        } else {
-            SongNode *temp4 = songs->next;
-            SongNode *trailer4 = songs;
-            while (temp4 != NULL) {
-                if (songs->s > temp4->s) {
-                    temp4 = temp4->next;
-                    trailer4 = trailer4->next;
-                } else {
-                    SongNode *tempHead = songs;
-                    trailer4->next = tempHead;
-                    tempHead->next = temp4;
-                    songs = songs->next;
-                    return;
-                }
-            }
-            if(temp4 == NULL){
-                SongNode *temporaryHead = songs;
-                songs = songs->next;
-                trailer4->next = temporaryHead;
-                temporaryHead = temp4;
-                temporaryHead->next = NULL;
-            }
-
-        }
-        return;
-    }
-}*/
 
 void UtPod::sortSongList() {
     if(songs == NULL){

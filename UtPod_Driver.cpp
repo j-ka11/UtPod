@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 {
     UtPod t;
     int result;
-/*
+
     //0 Songs in UtPod
     t.showSongList();
     cout << "called showSongList" << endl;
@@ -93,7 +93,7 @@ int main(int argc, char *argv[])
     cout << "printed song list" << endl;
     t.clearMemory();
     cout << "\n\n\n";
-*/
+
     //testing 10 songs
     cout << "testing 10 songs in the UtPod" << endl;
     result = 0;
@@ -122,23 +122,17 @@ int main(int argc, char *argv[])
     t.sortSongList();
     cout << "sorted songs\n" << endl;
     t.showSongList();
+    t.shuffle();
+    cout << "\n" << "finished shuffling" << endl;
+    t.showSongList();
+    t.sortSongList();
+    cout << "\nsorted song list again" << endl;
+    t.showSongList();
+    t.shuffle();
+    cout << "\nshuffling song list again" << endl;
+    t.showSongList();
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    /*Song song1("Christina Aguilera", "Genie in a Bottle", 3);                       //testing of operation overloads from here
+    Song song1("Christina Aguilera", "Genie in a Bottle", 3);                       //testing of operation overloads from here
     Song song2("Lil Wayne", "Dedicate", 4);                                         //
     Song song3("Lil Wayne", "Uproar", 4);                                           //
     bool song1First, song2First;                                                    //
@@ -157,65 +151,12 @@ int main(int argc, char *argv[])
         dedicateIsFirst = false;                                                    //
         uproarIsFirst = true;                                                       //
     }                                                                               //
-    cout << "song1 is " << song1.getTitle() << " by " << song1.getArtist() << endl; //
+    cout << "\n\n\nsong1 is " << song1.getTitle() << " by " << song1.getArtist() << endl; //
     cout << "song2 is " << song2.getTitle() << " by " << song2.getArtist() << endl; //
     cout << "song3 is " << song3.getTitle() << " by " << song3.getArtist() << endl; //
     cout << "song1First is " << song1First << endl;                                 //
     cout << "song2First is " << song2First << endl;                                 //
     cout << "dedicateIsFirst is " << dedicateIsFirst << endl;                       //
     cout << "uproarIsFirst is " << uproarIsFirst << endl;                           //to here
-
-    Song s1("Beatles", "Hey Jude1", 4);
-    int result = t.addSong(s1);
-    cout << "result = " << result << endl;
-
-    t.showSongList();
-
-    Song s2("Beatles", "Hey Jude2", 5);
-    result = t.addSong(s2);
-    cout << "result = " << result << endl;
-
-    t.showSongList();
-
-    Song s3("Beatles", "Hey Jude3", 6);
-    result = t.addSong(s3);
-    cout << "result = " << result << endl;
-
-    Song s4("Beatles", "Hey Jude4", 7);
-    result = t.addSong(s4);
-    cout << "result = " << result << endl;
-
-    Song s5("Beatles", "Hey Jude5", 241);
-    result = t.addSong(s5);
-    cout << "add result = " << result << endl;
-
-    t.showSongList();
-
-    result = t.removeSong(s2);
-    cout << "delete result = " << result << endl;
-
-    result = t.removeSong(s3);
-    cout << "delete result = " << result << endl;
-
-    t.showSongList();
-
-    result = t.removeSong(s1);
-    cout << "delete result = " << result << endl;
-
-    result = t.removeSong(s5);
-    cout << "delete result = " << result << endl;
-
-    result = t.removeSong(s4);
-    cout << "delete result = " << result << endl;
-
-
-    t.showSongList();
-
-    result = t.addSong(s5);
-    cout << "add result = " << result << endl;
-
-    t.showSongList();
-    cout << "memory = " << t.getRemainingMemory() << endl;*/
-
 
 }

@@ -69,9 +69,9 @@ bool Song::operator >(Song const &rhs){
             return false;
         }else{
             if(this->size < rhs.size){
-                return true;
-            }else if(this->size > rhs.size){
                 return false;
+            }else if(this->size > rhs.size){
+                return true;
             }else{
                 return false;
             }
@@ -98,9 +98,9 @@ bool Song::operator <(Song const &rhs){
             return true;
         }else{
             if(this->size < rhs.size){
-                return false;
-            }else if(this->size > rhs.size){
                 return true;
+            }else if(this->size > rhs.size){
+                return false;
             }else{
                 return false;
             }
