@@ -43,9 +43,9 @@ public:
 
      precondition: s is a valid Song
 
-     input parms -
+     input parms - reference to a song to add
 
-     output parms -
+     output parms - returns a 0 if successful or -1 if not enough memory
     */
 
     int addSong(Song const &s);
@@ -58,9 +58,9 @@ public:
          o returns -1 if nothing is removed
 
 
-       input parms -
+       input parms - reference to a song to remove
 
-       output parms -
+       output parms - returns a 0 if successful and -1 if it couldn't find the song, deletes that song's node
     */
 
     int removeSong(Song const &s);
@@ -70,9 +70,9 @@ public:
      *  shuffles the songs into random order
         o will do nothing if there are less than two songs in the current list
 
-       input parms -
+       input parms - UtPod song list must have at least two songs
 
-       output parms -
+       output parms - none
     */
 
     void shuffle();
@@ -82,9 +82,9 @@ public:
      * prints the current list of songs in order from first to last to standard output
      * format - Title, Artist, size in MB (one song per line)
 
-       input parms -
+       input parms - UtPod song list must have at least one song
 
-       output parms -
+       output parms - none
     */
 
     void showSongList();
@@ -94,9 +94,9 @@ public:
      *  sorts the songs in ascending order
         o will do nothing if there are less than two songs in the current list
 
-       input parms -
+       input parms - UtPod song list must have at least two songs
 
-       output parms -
+       output parms - none
     */
 
     void sortSongList();
@@ -105,9 +105,9 @@ public:
     /* FUNCTION - void clearMemory
      * clears all the songs from memory
 
-       input parms -
+       input parms - clears dynamically allocated memory in UtPod and will do nothing if UtPod is empty
 
-       output parms -
+       output parms - sets head pointer to NULL
     */
     void clearMemory();
 
@@ -116,9 +116,9 @@ public:
      *  returns the total amount of memory in the UtPod
         o will do nothing if there are less than two songs in the current list
 
-       input parms -
+       input parms - must have created a UtPod object
 
-       output parms -
+       output parms - returns total memory in UtPod
     */
 
     int getTotalMemory();
@@ -128,9 +128,9 @@ public:
     /* FUNCTION - int getRemainingMemory
      *  returns the amount of memory available for adding new songs
 
-       input parms -
+       input parms - must have created a UtPod object
 
-       output parms -
+       output parms - returns the amount of free space left to add songs
     */
 
     int getRemainingMemory();

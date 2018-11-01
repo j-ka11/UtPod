@@ -12,10 +12,14 @@ using namespace std;
 UtPod::UtPod() {
     songs = NULL;
     memSize = MAX_MEMORY;
+    unsigned int timeSeed = time(0);
+    srand(timeSeed);
     return;
 }
 
 UtPod::UtPod(int s) {
+    unsigned int timeSeed = time(0);
+    srand(timeSeed);
     songs = NULL;
     if (s < 0 || s > MAX_MEMORY) {
         memSize = MAX_MEMORY;
@@ -120,8 +124,6 @@ void UtPod::shuffle() {
             size = size - 2;
         }
         temp1 = songs;
-        unsigned int timeSeed = time(0);
-        srand(timeSeed);
         while (temp1 != NULL){
             int numTraverse = (rand() % size) + 1;
             SongNode *temp2 = songs->next;;
